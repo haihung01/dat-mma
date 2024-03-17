@@ -289,7 +289,7 @@ function StackGroup({ user }) {
     return (
         user?.role === "Staff" ? (
             <Stack.Navigator
-                initialRouteName="Customer-Home"
+                initialRouteName="Staff-Login"
             >
                 <Stack.Screen name="Staff-Login" component={StaffLogin} options={{ headerShown: false }} />
                 <Stack.Screen name="Staff-Home" component={StaffNavigator} options={{ headerShown: false }} />
@@ -298,7 +298,7 @@ function StackGroup({ user }) {
             (
                 <>
                     <Stack.Navigator
-                        initialRouteName="Customer-Home"
+                        initialRouteName="Staff-Login"
                     >
                         <Stack.Screen name="Staff-Login" component={StaffLogin} options={{ headerShown: false }} />
                         <Stack.Screen name="Customer-Home" component={StaffHomeTabNavigator} options={{ headerShown: false }} />
