@@ -3,6 +3,7 @@ import { View, Text, FlatList, StyleSheet, Image, Animated, Dimensions, SafeArea
 import banner from '../data/banner';
 import { Appbar, Avatar, Card, Title } from 'react-native-paper';
 import Icon from "react-native-vector-icons/Ionicons";
+import axios from 'axios';
 
 
 
@@ -36,6 +37,7 @@ const dataMau = [
         image: 'https://e-tailor.vercel.app/static/media/vest.bb2ba1ee8bea8b2706ab.jpg'
     },
 
+
 ]
 
 
@@ -66,6 +68,14 @@ export default function StaffProfile() {
     }
 
     const handleSelectCategory = () => { }
+
+    // useEffect(() => {
+    //     axios.get(`https://etailorapi.azurewebsites.net/api/`)
+    //         .then(res => {
+    //             setData(res.data)
+    //         })
+    //         .catch(err => { })
+    // }, [])
 
     return (
         <>
